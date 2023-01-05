@@ -18,7 +18,7 @@
         line-height: 28px;
         margin: 27.5px 5px;
         cursor: pointer;
-        p {
+        span {
             margin-left: 40px;
         }
     }
@@ -66,8 +66,8 @@
     border-bottom: 1px solid #d4d4d4;
     padding-bottom: 38px;
 }
-.review__answer{
-    span{
+.review__answer {
+    span {
         padding-bottom: 18px;
     }
 }

@@ -824,7 +824,7 @@ body {
   margin: 27.5px 5px;
   cursor: pointer;
 }
-.review__item summary p {
+.review__item summary span {
   margin-left: 40px;
 }
 .review__item summary {
