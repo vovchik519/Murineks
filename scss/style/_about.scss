@@ -1,0 +1,27 @@
+.about {
+    .container {
+        display: flex;
+    }
+}
+.about__image {
+    display: flex;
+    margin-right: 72px;
+    img {
+        height: 580px;
+    }
+    img:last-child {
+        margin-top: 165px;
+    }
+}
+.about__info {
+    margin-top: 57px;
+    .title {
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+    p {
+        font-size: 19px;
+        line-height: 28px;
+        color: #444444;
+    }
+}
