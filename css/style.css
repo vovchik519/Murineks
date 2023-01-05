@@ -769,6 +769,9 @@ body {
   margin-bottom: 17px;
 }
 
+.about {
+  margin-bottom: 100px;
+}
 .about .container {
   display: flex;
 }
@@ -795,4 +798,95 @@ body {
   font-size: 19px;
   line-height: 28px;
   color: #444444;
+}
+
+.review {
+  margin-bottom: 50px;
+}
+.review .title {
+  margin-bottom: 55px;
+}
+
+.review__wrapper {
+  margin-bottom: 25px;
+}
+
+.review__item {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.review__item summary {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 27.5px 5px;
+  cursor: pointer;
+}
+.review__item summary p {
+  margin-left: 40px;
+}
+.review__item summary {
+  list-style: none;
+}
+.review__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.review__item summary::before {
+  content: " ";
+  display: inline-block;
+  background: url(./../../svg/review/arrow.svg);
+  height: 0.8em;
+  width: 0.8em;
+  transform: rotate(-90deg);
+  background-size: 0.8em 0.8em;
+}
+
+.review__item[open] summary::before {
+  transform: rotate(0deg);
+}
+
+.review__wrap {
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  padding: 40px 37.5px;
+  margin-bottom: 40px;
+}
+
+.review__text,
+.review__answer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+}
+.review__text span,
+.review__answer span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 28px;
+}
+
+.review__text {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 38px;
+}
+
+.review__answer span {
+  padding-bottom: 18px;
+}
+
+.review__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  color: #b61d1d !important;
+}
+.review__link img {
+  margin-left: 9px;
 }
