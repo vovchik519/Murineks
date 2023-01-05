@@ -469,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news">
+                <!-- <div class="news">
                     <div class="container">
                         <div class="news__header">
                             <div class="title">
@@ -585,7 +585,7 @@
                         <div class="slider-prev"></div>
                         <div class="slider-pagination"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="about">
                     <div class="container">
                         <div class="about__image">
@@ -619,6 +619,9 @@
                     <div class="container">
                         <div class="title">
                             <h2>задать вопрос</h2>
+                            <!-- если бы был реальный проект
+                                предложил бы изменить название на отзывы
+                                или что нибудь подобное-->
                             <span class="line"></span>
                         </div>
                         <div class="review__wrapper">
@@ -815,144 +818,204 @@
                         /></a>
                     </div>
                 </div>
-                <!--
                 <div class="review__form">
                     <div class="container">
-                        <form action="#!" method="post" class="review__form-wrap">
+                        <form
+                            action="#!"
+                            method="post"
+                            class="review__form-wrapper"
+                        >
                             <fieldset>
                                 <legend>Оставьте отзыв о нашей компании</legend>
-                                <div class="review__form-input">
-                                    <input type="text" placeholder="Ваше имя" />
-                                    <input
-                                        type="email"
-                                        placeholder="Ваша почта*"
-                                    />
+                                <div class="review__form-container">
+                                    <div class="review__form-wrap">
+                                        <div class="review__form-input">
+                                            <input
+                                                type="text"
+                                                placeholder="Ваше имя"
+                                            />
+                                            <input
+                                                type="email"
+                                                placeholder="Ваша почта*"
+                                            />
+                                        </div>
+                                        <textarea
+                                            placeholder="Напишите Ваш вопрос"
+                                        ></textarea>
+                                        <button class="button">
+                                            оставить заявку
+                                            <svg
+                                                width="21"
+                                                height="25"
+                                                viewBox="0 0 21 25"
+                                                fill="white"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M6.23145 11.4734H12.2592V13.4734H6.23145V11.4734Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M11.9819 12.4733L10.417 10.9085L11.8312 9.49426L14.8103 12.4733L11.8312 15.4524L10.417 14.0382L11.9819 12.4733Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M10.3162 0.634155L0.191479 6.72101V18.3767L10.3163 24.3129L20.6436 18.3815V6.71617L10.3162 0.634155ZM19.029 7.63907V17.4469L10.3247 22.4462L1.80605 17.4517V7.63424L10.3247 2.51293L19.029 7.63907Z"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p>
+                                        *Ваш адрес электронной почты не будет
+                                        указан на сайте, она нужна для защиты от
+                                        ботов.
+                                    </p>
                                 </div>
-                                <textarea
-                                    placeholder="Напишите Ваш вопрос"
-                                ></textarea>
-                                <button class="button">
-                                    оставить заявку
-                                    <svg
-                                        width="21"
-                                        height="25"
-                                        viewBox="0 0 21 25"
-                                        fill="white"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M6.23145 11.4734H12.2592V13.4734H6.23145V11.4734Z"
-                                        />
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M11.9819 12.4733L10.417 10.9085L11.8312 9.49426L14.8103 12.4733L11.8312 15.4524L10.417 14.0382L11.9819 12.4733Z"
-                                        />
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M10.3162 0.634155L0.191479 6.72101V18.3767L10.3163 24.3129L20.6436 18.3815V6.71617L10.3162 0.634155ZM19.029 7.63907V17.4469L10.3247 22.4462L1.80605 17.4517V7.63424L10.3247 2.51293L19.029 7.63907Z"
-                                        />
-                                    </svg>
-                                </button>
                             </fieldset>
                         </form>
-                        <p>
-                            *Ваш адрес электронной почты не будет указан на
-                            сайте, она нужна для защиты от ботов.
-                        </p>
                     </div>
                 </div>
                 <div class="purchases">
                     <div class="container">
                         <div class="title">
-                            <h2>о компании</h2>
+                            <h2>ЗакупКИ</h2>
                             <span class="line"></span>
                         </div>
-                        <div class="purchases__wrapper">
-                            <div class="purchases__item">
-                                <p>01.01.2022</p>
-                                <h3>
-                                    Тендер на закупку офисного оборудования.
-                                    Победитель ТОО Ваша компания.
-                                </h3>
-                                <div class="purchases__link">
-                                    <a href="#!">
-                                        <img src="#!" alt="icon" /> скачать
-                                        протокол
-                                    </a>
-                                    <a href="#!"> читать онлайн </a>
+                        <div class="swiper purchases__wrapper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide purchases__item">
+                                    <p class="purchases__time">01.01.2022</p>
+                                    <h3>
+                                        Тендер на закупку офисного оборудования.
+                                        Победитель ТОО Ваша компания.
+                                    </h3>
+                                    <div class="purchases__link">
+                                        <a href="#!">
+                                            <img
+                                                src="./svg/purchases/pdf.svg"
+                                                alt="icon"
+                                            />
+                                            скачать протокол
+                                        </a>
+                                        <a href="#!"> читать онлайн </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide purchases__item">
+                                    <p class="purchases__time">01.01.2022</p>
+                                    <h3>
+                                        Тендер на закупку офисного оборудования.
+                                        Победитель ТОО Ваша компания.
+                                    </h3>
+                                    <div class="purchases__link">
+                                        <a href="#!">
+                                            <img
+                                                src="./svg/purchases/pdf.svg"
+                                                alt="icon"
+                                            />
+                                            скачать протокол
+                                        </a>
+                                        <a href="#!"> читать онлайн </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide purchases__item">
+                                    <p class="purchases__time">01.01.2022</p>
+                                    <h3>
+                                        Тендер на закупку офисного оборудования.
+                                        Победитель ТОО Ваша компания.
+                                    </h3>
+                                    <div class="purchases__link">
+                                        <a href="#!">
+                                            <img
+                                                src="./svg/purchases/pdf.svg"
+                                                alt="icon"
+                                            />
+                                            скачать протокол
+                                        </a>
+                                        <a href="#!"> читать онлайн </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide purchases__item">
+                                    <p class="purchases__time">01.01.2022</p>
+                                    <h3>
+                                        Тендер на закупку офисного оборудования.
+                                        Победитель ТОО Ваша компания.
+                                    </h3>
+                                    <div class="purchases__link">
+                                        <a href="#!">
+                                            <img
+                                                src="./svg/purchases/pdf.svg"
+                                                alt="icon"
+                                            />
+                                            скачать протокол
+                                        </a>
+                                        <a href="#!"> читать онлайн </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="purchases__item">
-                                <p>01.01.2022</p>
-                                <h3>
-                                    Тендер на закупку офисного оборудования.
-                                    Победитель ТОО Ваша компания.
-                                </h3>
-                                <div class="purchases__link">
-                                    <a href="#!">
-                                        <img src="#!" alt="icon" /> скачать
-                                        протокол
-                                    </a>
-                                    <a href="#!"> читать онлайн </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news__pointer">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <div class="slider-next"></div>
+                            <div class="slider-prev"></div>
+                            <div class="slider-pagination"></div>
                         </div>
                     </div>
                 </div>
-                -->
             </main>
-            <!--
             <footer class="footer">
                 <div class="footer__contact">
-                    <div class="contact">
-                        <div class="contact__item">
-                            <p>E-MAIL</p>
-                            <a href="mailto:info@mail.kz">info@mail.kz</a>
+                    <div class="footer__contact-wrap">
+                        <div class="footer__contact-feedback">
+                            <div class="footer__contact-item">
+                                <p>E-MAIL</p>
+                                <a href="mailto:info@mail.kz">info@mail.kz</a>
+                            </div>
+                            <div class="footer__contact-item">
+                                <p>телефон:</p>
+                                <a href="tel:+77777777777"
+                                    >+7 (777) 777—77—77</a
+                                >
+                            </div>
                         </div>
-                        <div class="contact__item">
-                            <p>телефон:</p>
-                            <a href="tel:+77777777777">+7 (777) 777—77—77</a>
-                        </div>
+                        <address>
+                            <span>Адресс</span>
+                            <p>
+                                Республика Казахстан, 000000, Алматы, ул.
+                                Улица-Улица д.00, кв. 00
+                            </p>
+                            <a href="#!">смотреть на карте →</a>
+                        </address>
                     </div>
-                    <address>
-                        Республика Казахстан, 000000, Алматы, ул. Улица-Улица
-                        д.00, кв. 00
-                    </address>
-                    <a href="#!">смотреть на карте →</a>
-                    <div class="footer__author">ABC DESIGN</div>
+                    <a
+                        href="https://abc-design.kz/"
+                        class="footer__author"
+                        target="_blank"
+                        >ABC DESIGN</a
+                    >
                 </div>
                 <div class="footer__feedback">
                     <div class="title">
-                        <h2>о компании</h2>
+                        <h2>оставить заявку</h2>
                         <span class="line"></span>
                     </div>
                     <form action="/" method="post">
                         <fieldset>
-                            <div class="footer__feedback-input">
-                                <p>
-                                    Ваше имя
+                            <div class="footer__feedback-input-wrap">
+                                <div class="footer__feedback-name">
+                                    <p>Ваше имя</p>
                                     <input
                                         type="text"
                                         placeholder="Введите имя"
                                     />
-                                </p>
-                                <p>
-                                    E-mail
+                                </div>
+                                <div class="footer__feedback-email">
+                                    <p>E-mail</p>
                                     <input
                                         type="email"
                                         placeholder="Введите email"
                                     />
-                                </p>
+                                </div>
                             </div>
                             <p>Сообщение</p>
                             <textarea></textarea>
@@ -986,7 +1049,6 @@
                     </form>
                 </div>
             </footer>
-            -->
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

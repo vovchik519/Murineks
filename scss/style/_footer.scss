@@ -1,0 +1,110 @@
+.footer {
+    display: flex;
+}
+.footer__contact-wrap {
+    border-bottom: 1px solid #92929264;
+    margin-bottom: 20px;
+}
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 460px;
+    background-color: #ececec;
+    padding: 110px 75px 67px;
+    address span,
+    p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #888888;
+        margin-bottom: 11px;
+    }
+    a,
+    address {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        font-style: normal;
+    }
+    address {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 76px;
+        p {
+            margin-bottom: 40px;
+        }
+        a {
+            color: #b61d1d;
+        }
+    }
+}
+.footer__contact-item {
+    margin-bottom: 47px;
+}
+.footer__author {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #444444 !important;
+}
+.footer__feedback {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 87px 97px 97px;
+    background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)),
+        url(./../../img/footer/bg.jpg) center no-repeat;
+    background-size: 100% auto;
+    color: white;
+    .title {
+        align-items: flex-start;
+        color: #ffffff;
+        margin-bottom: 33px;
+    }
+    .line {
+        background: #ffffff;
+    }
+    p {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    input,
+    textarea {
+        padding: 12px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+    }
+    input::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    textarea{
+        width: 535px;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+}
+.footer__feedback-input-wrap {
+    display: flex;
+    margin: 0 -10px 30px;
+}
+.footer__feedback-name,
+.footer__feedback-email {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.footer__feedback-name {
+    width: 220px;
+}
+.footer__feedback-email {
+    width: 295px;
+}

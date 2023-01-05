@@ -63,7 +63,7 @@ a:active,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: inherit;
+  color: #151515;
 }
 
 ul li {
@@ -889,4 +889,232 @@ body {
 }
 .review__link img {
   margin-left: 9px;
+}
+
+.review__form {
+  margin-bottom: 120px;
+}
+
+.review__form-container {
+  display: flex;
+}
+.review__form-container p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 60px;
+}
+
+.review__form-wrapper legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.review__form-wrap textarea,
+.review__form-wrap input {
+  border: 1px solid #b6b6b6;
+  padding: 14px 20px 15px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #969696;
+}
+.review__form-wrap textarea {
+  width: 100%;
+  min-height: 170px;
+  margin-bottom: 20px;
+}
+
+.review__form-input {
+  display: flex;
+  margin: 0 -10px 20px;
+}
+.review__form-input input {
+  margin: 0 10px;
+  width: 325px;
+}
+
+.purchases {
+  margin-bottom: 110px;
+}
+.purchases .title {
+  margin-bottom: 40px;
+}
+
+.purchases__wrapper {
+  position: relative;
+  padding: 10px 40px;
+}
+.purchases__wrapper .slider-next,
+.purchases__wrapper .slider-prev {
+  top: 75px;
+}
+
+.purchases__item {
+  border: 2px solid #d8d8d8;
+  padding: 33px;
+}
+.purchases__item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 19px;
+}
+
+.purchases__time {
+  font-size: 13px;
+  line-height: 24px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.purchases__link {
+  display: flex;
+  margin: 0 -20px;
+}
+.purchases__link a {
+  display: flex;
+  align-items: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  padding: 0 20px;
+}
+.purchases__link a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10.5px;
+}
+.purchases__link a:last-child {
+  border-left: 1px solid #9F9F9F;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer__contact-wrap {
+  border-bottom: 1px solid rgba(146, 146, 146, 0.3921568627);
+  margin-bottom: 20px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 460px;
+  background-color: #ececec;
+  padding: 110px 75px 67px;
+}
+.footer__contact address span,
+.footer__contact p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 11px;
+}
+.footer__contact a,
+.footer__contact address {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+}
+.footer__contact address {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 76px;
+}
+.footer__contact address p {
+  margin-bottom: 40px;
+}
+.footer__contact address a {
+  color: #b61d1d;
+}
+
+.footer__contact-item {
+  margin-bottom: 47px;
+}
+
+.footer__author {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #444444 !important;
+}
+
+.footer__feedback {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 87px 97px 97px;
+  background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../../img/footer/bg.jpg) center no-repeat;
+  background-size: 100% auto;
+  color: white;
+}
+.footer__feedback .title {
+  align-items: flex-start;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+.footer__feedback .line {
+  background: #ffffff;
+}
+.footer__feedback p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.footer__feedback input,
+.footer__feedback textarea {
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+.footer__feedback input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer__feedback input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer__feedback input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer__feedback textarea {
+  width: 535px;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.footer__feedback-input-wrap {
+  display: flex;
+  margin: 0 -10px 30px;
+}
+
+.footer__feedback-name,
+.footer__feedback-email {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.footer__feedback-name {
+  width: 220px;
+}
+
+.footer__feedback-email {
+  width: 295px;
 }

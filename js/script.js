@@ -46,3 +46,26 @@ var swiper = new Swiper(".news__wrapper", {
         }
     }
 });
+
+var swiper = new Swiper(".purchases__wrapper", {
+    slidesPerView: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    spaceBetween: 45,
+    navigation: {
+        nextEl: ".slider-next",
+        prevEl: ".slider-prev",
+    },
+    pagination: {
+        el: '.slider-pagination',
+        type: 'bullets',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        }
+    }
+});

@@ -1,0 +1,48 @@
+.purchases {
+    margin-bottom: 110px;
+    .title {
+        margin-bottom: 40px;
+    }
+}
+.purchases__wrapper {
+    position: relative;
+    padding: 10px 40px;
+    .slider-next,
+    .slider-prev {
+        top: 75px;
+    }
+}
+.purchases__item {
+    border: 2px solid #d8d8d8;
+    padding: 33px;
+    h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 19px;
+    }
+}
+.purchases__time {
+    font-size: 13px;
+    line-height: 24px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+.purchases__link {
+    display: flex;
+    margin: 0 -20px;
+    a{
+        display: flex;
+        align-items: center;
+        text-decoration-line: underline;
+        padding: 0 20px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10.5px;
+        }
+    }
+    a:last-child{
+        border-left: 1px solid #9F9F9F;
+    }
+}

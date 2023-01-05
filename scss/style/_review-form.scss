@@ -1,0 +1,42 @@
+.review__form {
+    margin-bottom: 120px;
+}
+.review__form-container {
+    display: flex;
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 60px;
+    }
+}
+.review__form-wrapper {
+    legend {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+}
+.review__form-wrap {
+    textarea,
+    input {
+        border: 1px solid #b6b6b6;
+        padding: 14px 20px 15px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #969696;
+    }
+    textarea {
+        width: 100%;
+        min-height: 170px;
+        margin-bottom: 20px;
+    }
+}
+.review__form-input {
+    display: flex;
+    margin: 0 -10px 20px;
+    input {
+        margin: 0 10px;
+        width: 325px;
+    }
+}
