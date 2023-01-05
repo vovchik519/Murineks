@@ -442,19 +442,17 @@ body {
   margin-bottom: 100px;
 }
 .offer .title {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .offer__wrapper {
-  display: flex;
-  width: 410px;
-  margin: 0 1%;
-  width: 100%;
+  position: relative;
+  padding: 40px;
+  width: 1230px;
 }
 
 .offer__item {
-  width: 31%;
-  margin: 0 1%;
+  height: auto;
   transition: 0.3s;
   cursor: pointer;
   padding: 20px;
@@ -475,6 +473,27 @@ body {
   color: #666666;
 }
 
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 225px;
+  width: 33px;
+  height: 33px;
+  z-index: 50;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+}
+
+.slider-next {
+  right: 0;
+  background-image: url(./../../svg/slider/arrow-right.svg);
+}
+
+.slider-prev {
+  left: 0;
+  background-image: url(./../../svg/slider/arrow-left.svg);
+}
+
 .offer__item:hover {
   background: #ffffff;
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12);
@@ -485,7 +504,6 @@ body {
 
 .offer__item-image {
   width: 100%;
-  height: 300px;
   background-color: #efefef;
   margin-bottom: 43px;
   transition: 0.3s;
@@ -639,4 +657,80 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #666666;
+}
+
+.offer {
+  margin-bottom: 100px;
+}
+.offer .title {
+  margin-bottom: 10px;
+}
+
+.offer__wrapper {
+  position: relative;
+  padding: 40px;
+  width: 1230px;
+}
+
+.offer__item {
+  height: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 20px;
+}
+.offer__item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+.offer__item .line {
+  margin-bottom: 13px;
+}
+.offer__item p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 225px;
+  width: 33px;
+  height: 33px;
+  z-index: 50;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+}
+
+.slider-next {
+  right: 0;
+  background-image: url(./../../svg/slider/arrow-right.svg);
+}
+
+.slider-prev {
+  left: 0;
+  background-image: url(./../../svg/slider/arrow-left.svg);
+}
+
+.offer__item:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12);
+}
+.offer__item:hover .offer__item-image {
+  background-color: white;
+}
+
+.offer__item-image {
+  width: 100%;
+  background-color: #efefef;
+  margin-bottom: 43px;
+  transition: 0.3s;
+}
+.offer__item-image img {
+  width: 100%;
+  min-height: 100%;
+  padding: 10px;
 }

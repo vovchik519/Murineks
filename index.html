@@ -5,11 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Murineks</title>
-        <link rel="stylesheet" href="css/style.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Rubik:regular,500,600,700"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="wrapper">
@@ -255,13 +259,13 @@
                     </div>
                 </div>
                 <div class="offer">
-                    <div class="container">
-                        <div class="title">
-                            <h2>НАШИ УСЛУГИ</h2>
-                            <span class="line"></span>
-                        </div>
-                        <div class="offer__wrapper">
-                            <div class="offer__item">
+                    <div class="title">
+                        <h2>НАШИ УСЛУГИ</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="swiper offer__wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide offer__item">
                                 <div class="offer__item-image">
                                     <img
                                         src="./img/offer/1.jpg"
@@ -276,7 +280,7 @@
                                     по рыночным ценам)
                                 </p>
                             </div>
-                            <div class="offer__item">
+                            <div class="swiper-slide offer__item">
                                 <div class="offer__item-image">
                                     <img
                                         src="./img/offer/2.jpg"
@@ -290,7 +294,7 @@
                                     согласно ГПР (График поставки материалов)
                                 </p>
                             </div>
-                            <div class="offer__item">
+                            <div class="swiper-slide offer__item">
                                 <div class="offer__item-image">
                                     <img
                                         src="./img/offer/3.jpg"
@@ -302,6 +306,8 @@
                                 <p>Составление графика проведения тендеров</p>
                             </div>
                         </div>
+                        <div class="slider-next"></div>
+                        <div class="slider-prev"></div>
                     </div>
                 </div>
                 <div class="service">
@@ -927,6 +933,7 @@
             -->
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
