@@ -94,8 +94,52 @@ body {
 }
 
 .container {
-  width: 88.87%;
+  width: 89%;
   margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 230px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #b61d1d;
+  transition: 0.3s;
+  transform: scale(1);
+}
+.button img {
+  margin-left: 11px;
+}
+
+.button:hover {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 2px rgb(83, 83, 83);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h2 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #151515;
+  margin-bottom: 18px;
+}
+
+.line {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #b61d1d;
 }
 
 .header {
@@ -125,6 +169,7 @@ body {
   font-size: 33px;
   line-height: 40px;
   color: #b61d1d;
+  text-transform: uppercase;
 }
 .logo__title h2 {
   font-size: 19px;
@@ -142,7 +187,7 @@ body {
 .contact {
   display: flex;
   align-items: center;
-  margin: 0 -14.4px 13px;
+  margin: 0 -14.4px;
 }
 
 .contact__item {
@@ -170,11 +215,13 @@ body {
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
 .menu__item {
-  margin: 0 15px;
+  margin: 4px 15px;
+  text-transform: uppercase;
 }
 .menu__item a {
   font-size: 17px;
@@ -227,7 +274,7 @@ body {
     margin: 0 -12px;
   }
   .menu__item {
-    margin: 0 12px;
+    margin: 3.2px 12px;
   }
   .menu__item a {
     font-size: 1.1vw;
@@ -275,6 +322,159 @@ body {
     margin: 0 -9px;
   }
   .menu__item {
-    margin: 0 9px;
+    margin: 2.4px 9px;
   }
+}
+.first__screen {
+  position: relative;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../../img/header/bg.jpg) center no-repeat;
+  background-size: auto 100%;
+  width: 100%;
+  min-height: 650px;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.first__screen-info {
+  padding: 182px 0 160px 0;
+  width: 588px;
+}
+.first__screen-info h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.first__screen-info p {
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 38px;
+}
+
+.social {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.social li {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+.usp {
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.usp .title {
+  margin-bottom: 60px;
+}
+
+.usp::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: 30px;
+  width: 903px;
+  height: 762.23px;
+  background-image: url(./../../img/usp/bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -1;
+}
+
+.usp__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -28px -0.5%;
+}
+
+.usp__item {
+  margin: 28px 0.5%;
+  width: 24%;
+}
+.usp__item p {
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.usp__title {
+  display: flex;
+  margin-bottom: 15px;
+}
+.usp__title img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+.usp__title h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #151515;
+}
+
+.container .title {
+  margin-bottom: 50px;
+}
+
+.offer__wrapper {
+  display: flex;
+  width: 410px;
+  margin: 0 1%;
+  width: 100%;
+}
+
+.offer__item {
+  width: 31%;
+  height: 535px;
+  margin: 0 1%;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 20px;
+}
+.offer__item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #151515;
+  margin-bottom: 8px;
+}
+.offer__item .line {
+  margin-bottom: 13px;
+}
+.offer__item p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.offer__item:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12);
+}
+.offer__item:hover .offer__item-image {
+  background-color: white;
+}
+
+.offer__item-image {
+  width: 100%;
+  height: 300px;
+  background-color: #efefef;
+  margin-bottom: 43px;
+  transition: 0.3s;
+}
+.offer__item-image img {
+  width: 100%;
+  min-height: 100%;
+  padding: 10px;
 }

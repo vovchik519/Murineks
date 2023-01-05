@@ -22,6 +22,7 @@
         font-size: 33px;
         line-height: 40px;
         color: #b61d1d;
+        text-transform: uppercase;
     }
     h2 {
         font-size: 19px;
@@ -38,7 +39,7 @@
 .contact {
     display: flex;
     align-items: center;
-    margin: 0 -14.4px 13px;
+    margin: 0 -14.4px;
 }
 .contact__item {
     margin: 0 14.4px;
@@ -64,10 +65,12 @@
 }
 .menu__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 .menu__item {
-    margin: 0 15px;
+    margin: 4px 15px;
+    text-transform: uppercase;
     a {
         font-size: 17px;
         line-height: 20px;
@@ -119,7 +122,7 @@
         margin: 0 (-15px * 0.8);
     }
     .menu__item {
-        margin: 0 (15px * 0.8);
+        margin: (4px * 0.8) (15px * 0.8);
         a {
             font-size: 1.1vw;
             line-height: 1.1vw;
@@ -167,6 +170,6 @@
         margin: 0 (-15px * 0.6);
     }
     .menu__item {
-        margin: 0 (15px * 0.6);
+        margin: (4px * 0.6) (15px * 0.6);
     }
 }
