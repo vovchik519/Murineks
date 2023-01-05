@@ -74,6 +74,7 @@ h6 {
 }
 body {
     font-family: "Rubik";
+    color: #151515;
     // font-display: block;
 }
 .wrapper {
@@ -94,16 +95,21 @@ body {
     font-size: 16px;
     line-height: 19px;
     font-weight: 600;
-    color: #b61d1d;
     transition: 0.3s;
-    transform: scale(1);
-    img {
+    background: #b61d1d;
+    color: #ffffff;
+    svg {
         margin-left: 11px;
+        fill: white;
+        transition: 0.3s;
     }
 }
 .button:hover {
-    transform: scale(0.98);
-    box-shadow: 2px 2px 2px rgb(83, 83, 83);
+    background: white;
+    color: #b61d1d;
+    svg {
+        fill: #b61d1d;
+    }
 }
 .title {
     display: flex;
@@ -114,7 +120,6 @@ body {
         font-size: 45px;
         line-height: 50px;
         text-transform: uppercase;
-        color: #151515;
         margin-bottom: 18px;
     }
 }

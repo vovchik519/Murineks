@@ -1,0 +1,55 @@
+.service {
+    position: relative;
+    background: linear-gradient(
+            93.59deg,
+            rgba(50, 42, 35, (0.9 * 0.6)) -1.96%,
+            rgba(50, 42, 35, (0.844927 * 0.6)) 30.42%,
+            rgba(50, 42, 35, (0.701926 * 0.6)) 41.94%,
+            rgba(50, 42, 35, 0) 75.85%
+        ),
+        url(./../../img/service/bg.jpg) center no-repeat;
+    background-size: auto 100%;
+    width: 100%;
+    min-height: 768px;
+    color: #ffffff;
+    margin-bottom: 100px;
+    padding: 136px 0;
+    .title {
+        align-items: flex-start;
+        margin-bottom: 62px;
+        h2 {
+            color: white;
+        }
+    }
+    .button {
+        margin-top: 50px;
+    }
+}
+.service__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px -3%;
+    width: 600px;
+}
+.service__item {
+    display: flex;
+    width: 44%;
+    margin: 20px 3%;
+    img {
+        width: 65px;
+        height: 65px;
+        margin-right: 20px;
+    }
+}
+.service__item-info {
+    h3 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 23px;
+        color: #ececec;
+    }
+}

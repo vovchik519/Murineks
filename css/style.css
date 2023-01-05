@@ -86,6 +86,7 @@ h6 {
 
 body {
   font-family: "Rubik";
+  color: #151515;
 }
 
 .wrapper {
@@ -108,17 +109,22 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
-  color: #b61d1d;
   transition: 0.3s;
-  transform: scale(1);
+  background: #b61d1d;
+  color: #ffffff;
 }
-.button img {
+.button svg {
   margin-left: 11px;
+  fill: white;
+  transition: 0.3s;
 }
 
 .button:hover {
-  transform: scale(0.98);
-  box-shadow: 2px 2px 2px rgb(83, 83, 83);
+  background: white;
+  color: #b61d1d;
+}
+.button:hover svg {
+  fill: #b61d1d;
 }
 
 .title {
@@ -131,7 +137,6 @@ body {
   font-size: 45px;
   line-height: 50px;
   text-transform: uppercase;
-  color: #151515;
   margin-bottom: 18px;
 }
 
@@ -203,7 +208,6 @@ body {
   align-items: center;
   font-size: 20px;
   line-height: 24px;
-  color: #151515;
   transition: 0.2s;
 }
 .contact__item a:first-child {
@@ -226,7 +230,6 @@ body {
 .menu__item a {
   font-size: 17px;
   line-height: 20px;
-  color: #151515;
   transition: 0.1s;
 }
 .menu__item a:hover {
@@ -334,6 +337,20 @@ body {
   color: #ffffff;
   margin-bottom: 100px;
 }
+.first__screen .button {
+  background: white;
+  color: #b61d1d;
+}
+.first__screen .button svg {
+  fill: #b61d1d;
+}
+.first__screen .button:hover {
+  background: #b61d1d;
+  color: white;
+}
+.first__screen .button:hover svg {
+  fill: white;
+}
 
 .first__screen-info {
   padding: 182px 0 160px 0;
@@ -419,10 +436,12 @@ body {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #151515;
 }
 
-.container .title {
+.offer {
+  margin-bottom: 100px;
+}
+.offer .title {
   margin-bottom: 50px;
 }
 
@@ -435,7 +454,6 @@ body {
 
 .offer__item {
   width: 31%;
-  height: 535px;
   margin: 0 1%;
   transition: 0.3s;
   cursor: pointer;
@@ -445,7 +463,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #151515;
   margin-bottom: 8px;
 }
 .offer__item .line {
@@ -477,4 +494,149 @@ body {
   width: 100%;
   min-height: 100%;
   padding: 10px;
+}
+
+.service {
+  position: relative;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../../img/service/bg.jpg) center no-repeat;
+  background-size: auto 100%;
+  width: 100%;
+  min-height: 768px;
+  color: #ffffff;
+  margin-bottom: 100px;
+  padding: 136px 0;
+}
+.service .title {
+  align-items: flex-start;
+  margin-bottom: 62px;
+}
+.service .title h2 {
+  color: white;
+}
+.service .button {
+  margin-top: 50px;
+}
+
+.service__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -3%;
+  width: 600px;
+}
+
+.service__item {
+  display: flex;
+  width: 44%;
+  margin: 20px 3%;
+}
+.service__item img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+}
+
+.service__item-info h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+.service__item-info p {
+  font-size: 15px;
+  line-height: 23px;
+  color: #ececec;
+}
+
+.stage {
+  margin-bottom: 100px;
+}
+.stage .title {
+  margin-bottom: 25px;
+}
+
+.stage__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+  width: 570px;
+  margin: 0 auto 70px;
+}
+
+.stage__wrapper {
+  position: relative;
+  display: flex;
+  margin: 0 -1.5%;
+}
+
+.stage__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dashed #d6d4d4;
+}
+
+.stage__item {
+  position: relative;
+  flex: 1 1 22%;
+  cursor: pointer;
+  margin: 0 1.5%;
+}
+
+.stage__item:hover .stage__info h3,
+.stage__item:hover .stage__image span {
+  color: #b61d1d;
+}
+.stage__item:hover .stage__point {
+  border: 13px solid #b61d1d;
+}
+
+.stage__image {
+  position: relative;
+  width: 74px;
+  margin-bottom: 92px;
+}
+.stage__image img {
+  width: 74px;
+  height: 74px;
+}
+.stage__image span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  transform: translate(100%, -100%);
+  transition: 0.2s;
+}
+
+.stage__point {
+  display: block;
+  border: 13px solid #e7a9a9;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 120px;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.stage__info h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  transition: 0.2s;
+}
+.stage__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
 }

@@ -13,6 +13,20 @@
     min-height: 650px;
     color: #ffffff;
     margin-bottom: 100px;
+    .button {
+        background: white;
+        color: #b61d1d;
+        svg {
+            fill: #b61d1d;
+        }
+    }
+    .button:hover {
+        background: #b61d1d;
+        color: white;
+        svg {
+            fill: white;
+        }
+    }
 }
 .first__screen-info {
     padding: 182px 0 160px 0;
