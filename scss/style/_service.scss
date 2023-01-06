@@ -53,3 +53,51 @@
         color: #ececec;
     }
 }
+@media (max-width: 768px) {
+    .service {
+        background: linear-gradient(
+                93.59deg,
+                rgba(50, 42, 35, (0.9 * 0.6)) -1.96%,
+                rgba(50, 42, 35, (0.844927 * 0.6)) 30.42%,
+                rgba(50, 42, 35, (0.701926 * 0.6)) 41.94%,
+                rgba(50, 42, 35, 0.207) 75.85%
+            ),
+            url(./../../img/service/bg-mobile.jpg) center no-repeat;
+        background-size: 100% auto;
+        min-height: none;
+        margin-bottom: 13vw;
+        padding: 17.7vw 0;
+        .title {
+            width: 70vw;
+            margin-bottom: 8vw;
+        }
+        .button {
+            margin-top: 6.5vw;
+        }
+    }
+    .service__wrapper {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .service__item {
+        width: 60vw;
+        margin: 0 0 5vw;
+        img {
+            width: 15vw;
+            height: 15vw;
+            margin-right: 3vw;
+        }
+    }
+    .service__item-info {
+        h3 {
+            font-size: 6.5vw;
+            line-height: 6vw;
+            margin-bottom: 2vw;
+        }
+        p {
+            font-size: 3.26vw;
+            line-height: 4vw;
+        }
+    }
+}

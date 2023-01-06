@@ -2,7 +2,7 @@ var swiper = new Swiper(".offer__wrapper", {
     slidesPerView: 3,
     loop: true,
     loopFillGroupWithBlank: true,
-    spaceBetween: 30,
+    spaceBetween: 40,
     navigation: {
         nextEl: ".slider-next",
         prevEl: ".slider-prev",
@@ -67,6 +67,17 @@ var swiper = new Swiper(".purchases__wrapper", {
         768: {
             slidesPerView: 2
         }
+    }
+});
+
+var swiper = new Swiper(".usp__slider", {
+    slidesPerView: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    spaceBetween: 100,
+    navigation: {
+        nextEl: ".slider-next",
+        prevEl: ".slider-prev",
     }
 });
 

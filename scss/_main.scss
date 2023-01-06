@@ -142,6 +142,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     cursor: pointer;
+    z-index: 5;
 }
 .slider-next {
     right: 0;
@@ -185,5 +186,20 @@ body {
         svg {
             margin-left: 1.5vw;
         }
+    }
+    .slider-prev,
+    .slider-next {
+        cursor: default;
+    }
+    .title {
+        h2{
+            font-size: 8vw;
+            line-height: 8.5vw;
+            margin-bottom: 4vw;
+        }
+    }
+    .line{
+        width: 8vw;
+        height: 0.8vw;
     }
 }
