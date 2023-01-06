@@ -69,3 +69,10 @@ var swiper = new Swiper(".purchases__wrapper", {
         }
     }
 });
+
+let menuBtn = document.querySelector('.menu-btn');
+let headerWrap = document.querySelector('.header__wrap');
+menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('active');
+    headerWrap.classList.toggle('active');
+})
