@@ -8,9 +8,15 @@
     display: flex;
     margin-right: 72px;
     img {
-        height: 580px;
+        max-height: 580px;
+    }
+    img:first-child {
+        width: 25.4vw;
+        max-width: 347px;
     }
     img:last-child {
+        width: 20vw;
+        max-width: 275px;
         margin-top: 165px;
     }
 }
@@ -24,5 +30,43 @@
         font-size: 19px;
         line-height: 28px;
         color: #444444;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        margin-bottom: 13vw;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .about__image {
+        display: flex;
+        margin-right: 0;
+        img {
+            max-height: 75.5vw;
+        }
+        img:first-child {
+            width: 50vw;
+            max-width: none;
+        }
+        img:last-child {
+            width: 40vw;
+            max-width: none;
+            margin-top: 21.5vw;
+        }
+    }
+    .about__info {
+        margin-top: 7.5vw;
+        .title {
+            align-items: flex-start;
+            margin-bottom: 3vw;
+        }
+        p {
+            font-size: 3.5vw;
+            line-height: 4vw;
+            color: #444444;
+        }
     }
 }

@@ -180,11 +180,12 @@ body {
 @media (max-width: 768px) {
     .button {
         font-size: 3.1vw;
-        line-height: 3.7vw;
         width: 45vw;
         height: 10vw;
+        vertical-align: middle;
         svg {
             margin-left: 1.5vw;
+            width: 4vw;
         }
     }
     .slider-prev,
@@ -192,13 +193,13 @@ body {
         cursor: default;
     }
     .title {
-        h2{
+        h2 {
             font-size: 8vw;
             line-height: 8.5vw;
             margin-bottom: 4vw;
         }
     }
-    .line{
+    .line {
         width: 8vw;
         height: 0.8vw;
     }
