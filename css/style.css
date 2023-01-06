@@ -199,6 +199,17 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .button {
+    font-size: 3.1vw;
+    line-height: 3.7vw;
+    width: 45vw;
+    height: 10vw;
+  }
+  .button svg {
+    margin-left: 1.5vw;
+  }
+}
 .header {
   padding: 21px 0;
 }
@@ -509,7 +520,7 @@ body {
 }
 .first__screen {
   position: relative;
-  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../../img/header/bg.jpg) center no-repeat;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../../img/header/bg.jpg) right no-repeat;
   background-size: auto 100%;
   width: 100%;
   min-height: 650px;
@@ -562,6 +573,33 @@ body {
   margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+  .first__screen {
+    position: relative;
+    background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../../img/header/bg-mobile.jpg) top no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 13vw;
+  }
+  .first__screen-info {
+    padding: 52vh 0 15vh;
+    width: 100%;
+  }
+  .first__screen-info h1 {
+    font-size: 8.5vw;
+    line-height: 10.4vw;
+    margin-bottom: 4.6vw;
+  }
+  .first__screen-info p {
+    font-size: 3.2vw;
+    line-height: 4.8vw;
+    margin-bottom: 7vw;
+  }
+  .social {
+    display: none;
+  }
+}
 .usp {
   position: relative;
   width: 100%;

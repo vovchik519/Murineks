@@ -111,7 +111,7 @@ body {
         fill: #b61d1d;
     }
 }
-.button-border:hover{
+.button-border:hover {
     border: 1px solid #b61d1d;
 }
 .title {
@@ -174,5 +174,16 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .button {
+        font-size: 3.1vw;
+        line-height: 3.7vw;
+        width: 45vw;
+        height: 10vw;
+        svg {
+            margin-left: 1.5vw;
+        }
     }
 }
