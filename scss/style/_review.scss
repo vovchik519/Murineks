@@ -40,12 +40,12 @@
     background: url(./../../svg/review/arrow.svg) no-repeat;
     height: 30px;
     width: 30px;
-    transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateX(50%);
     background-size: 30px 30px;
 }
 
 .review__item[open] summary::before {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(-50%);
 }
 .review__wrap {
     background-color: #f7f7f7;
