@@ -60,11 +60,7 @@
 @media (max-width: 768px) {
     .first__screen {
         position: relative;
-        background: linear-gradient(
-            #36363699,
-            #36363699,
-            ),
-            url(../../img/header/bg-mobile.jpg) top no-repeat;
+        background: url(../../img/header/bg-mobile.jpg) top no-repeat;
         background-size: 100% auto;
         width: 100%;
         min-height: 100vh;
