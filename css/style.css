@@ -1646,7 +1646,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 87px 97px 97px;
-  background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../../img/footer/bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../img/footer/bg.jpg) center no-repeat;
   background-size: 100% auto;
   color: white;
 }
