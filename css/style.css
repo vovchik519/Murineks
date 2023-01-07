@@ -801,7 +801,7 @@ body {
 }
 .service {
   position: relative;
-  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../../img/service/bg.jpg) center no-repeat;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/service/bg.jpg) center no-repeat;
   background-size: auto 100%;
   width: 100%;
   min-height: 768px;
@@ -851,7 +851,7 @@ body {
 
 @media (max-width: 768px) {
   .service {
-    background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0.207) 75.85%), url(./../../img/service/bg-mobile.jpg) center no-repeat;
+    background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0.207) 75.85%), url(./../img/service/bg-mobile.jpg) center no-repeat;
     background-size: 100% auto;
     min-height: none;
     margin-bottom: 13vw;
