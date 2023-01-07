@@ -25,11 +25,13 @@
         font-size: 17px;
         line-height: 20px;
         color: #969696;
+        border-radius: 4px;
     }
     textarea {
         width: 100%;
-        min-height: 170px;
+        height: 170px;
         margin-bottom: 20px;
+        border-radius: 4px;
     }
 }
 .review__form-input {
@@ -60,7 +62,7 @@
             font-size: 4vw;
             line-height: 5vw;
             margin-left: 0;
-            margin-top: 2vw;
+            margin-top: 3vw;
         }
     }
     .review__form-wrapper {
@@ -74,12 +76,12 @@
         textarea,
         input {
             padding: 2.5vw 3vw 2.8vw;
-            font-size: 4vw;
-            line-height: 5vw;
+            font-size: 5vw;
+            line-height: 6vw;
         }
         textarea {
-            min-height: 22vw;
-            margin-bottom: 2.6vw;
+            height: 30vw;
+            margin-bottom: 5vw;
         }
     }
     .review__form-input {

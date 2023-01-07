@@ -87,6 +87,11 @@
     }
 }
 @media (max-width: 768px) {
+    .review {
+        .title {
+            margin-bottom: 7.161vw;
+        }
+    }
     .review__wrap {
         border-radius: 1vw;
         padding: 3vw 2vw;
@@ -94,8 +99,8 @@
     }
     .review__item {
         summary {
-            font-size: 4vw;
-            line-height: 4vw;
+            font-size: 5vw;
+            line-height: 6vw;
             margin: 3.5vw 0.8vw;
             span {
                 margin-left: 7vw;
@@ -107,11 +112,11 @@
     }
     .review__text,
     .review__answer {
-        font-size: 3.5vw;
-        line-height: 4vw;
+        font-size: 4.5vw;
+        line-height: 5vw;
         span {
-            font-size: 3vw;
-            line-height: 3vw;
+            font-size: 4vw;
+            line-height: 4vw;
             padding-top: 4vw;
         }
     }
@@ -124,8 +129,8 @@
         transform: rotate(-90deg) translateX(50%);
         background-size: 3vw 3vw;
     }
-    .review__link{
-        font-size: 3vw;
-        line-height: 3vw;
+    .review__link {
+        font-size: 4vw;
+        line-height: 4vw;
     }
 }

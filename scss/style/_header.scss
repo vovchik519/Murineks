@@ -194,19 +194,19 @@
     .logo {
         margin-right: 0;
         img {
-            width: 9.6vw;
-            height: 9.6vw;
+            width: 11vw;
+            height: 11vw;
         }
     }
     .logo__title {
         margin-left: 2.6vw;
         p:first-child {
-            font-size: 5vw;
-            line-height: 6vw;
+            font-size: 6vw;
+            line-height: 7vw;
         }
         p:last-child {
-            font-size: 3vw;
-            line-height: 4vw;
+            font-size: 4vw;
+            line-height: 5vw;
         }
     }
     .contact {
@@ -230,6 +230,9 @@
         }
     }
     .menu {
+        display: flex;
+        align-items: center;
+        height: 100%;
         width: 100%;
     }
     .menu__list {
@@ -240,12 +243,16 @@
         margin: 0 0 6.5vw 0;
     }
     .menu__item {
-        margin: 6.5vw 0 0 0;
+        margin: 0;
+        width: 100%;
         a {
+            display: flex;
+            justify-content: center;
             font-size: 7vw;
             line-height: 9vw;
             transition: 0.1s;
-            width: 100%;
+            width: auto;
+            margin: 6.5vw 0 0;
         }
         a:hover {
             color: #b61d1d;
@@ -297,7 +304,7 @@
         width: 100%;
         height: 100%;
         padding: 1.95vw;
-        background: #e7e7e7;
+        background: white;
         transform: translateX(100%);
         transition: transform 0.5s;
         padding: 5.2vw 6.5vw;

@@ -40,6 +40,9 @@ button,
 textarea {
     font-family: inherit;
 }
+textarea {
+    resize: none;
+}
 input::-ms-clear {
     display: none;
 }
@@ -75,7 +78,7 @@ h6 {
 body {
     font-family: "Rubik";
     color: #151515;
-    // font-display: block;
+    font-display: swap;
 }
 .wrapper {
     position: relative;
@@ -168,7 +171,9 @@ body {
 .slider-pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
+    height: 25px;
     .swiper-pagination-bullet {
         background-color: #bbbbbb;
         opacity: 1;
@@ -190,26 +195,29 @@ body {
         border-radius: 50%;
     }
 }
+.mobile {
+    display: none;
+}
 @media (max-width: 768px) {
     .button {
-        font-size: 3.1vw;
-        width: 45vw;
-        height: 10vw;
+        font-size: 4vw;
+        width: 60vw;
+        height: 14vw;
         vertical-align: middle;
         svg {
             margin-left: 1.5vw;
-            width: 4vw;
-            height: 4vw;
+            width: 6vw;
+            height: 6vw;
         }
     }
     .slider-prev,
     .slider-next {
-        cursor: default;
+        display: none;
     }
     .title {
         h2 {
-            font-size: 8vw;
-            line-height: 8.5vw;
+            font-size: 9vw;
+            line-height: 9.5vw;
             margin-bottom: 4vw;
         }
     }
@@ -218,6 +226,19 @@ body {
         height: 0.8vw;
     }
     .slider-pagination {
-        height: 5vw;
+        height: 5.5vw;
+        margin-top: 5vw;
+        .swiper-pagination-bullet {
+            width: 1.5vw;
+            height: 1.5vw;
+            margin: 0 3vw !important;
+        }
+        .swiper-pagination-bullet-active::before {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+    .mobile {
+        display: flex;
     }
 }

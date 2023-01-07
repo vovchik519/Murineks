@@ -13,21 +13,23 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         />
-        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
                 <div class="container">
-                    <div class="logo">
-                        <img src="./svg/header/logo.svg" alt="MI" />
-                        <div class="logo__title">
-                            <!-- Вопрос насчет текста с логотипом, правильный ли тег?, или лучше в p -->
-                            <p>MURINEKS</p>
-                            <p>ПРАВИЛЬНЫЙ ЗАКУП</p>
+                    <a href="#home">
+                        <div class="logo">
+                            <img src="./svg/header/logo.svg" alt="MI" />
+                            <div class="logo__title">
+                                <!-- Вопрос насчет текста с логотипом, правильный ли тег?, или лучше в p -->
+                                <p>MURINEKS</p>
+                                <p>ПРАВИЛЬНЫЙ ЗАКУП</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="header__wrap">
+                    </a>
+                    <div class="header__wrap" id="header__wrap">
                         <div class="contact">
                             <div class="contact__item">
                                 <a href="tel:+77777777777">
@@ -51,32 +53,32 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#!">ПОЧЕМУ МЫ?</a>
+                                    <a href="#usp">ПОЧЕМУ МЫ?</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#!">НАШИ УСЛУГИ</a>
+                                    <a href="#offer">НАШИ УСЛУГИ</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#!">КАК МЫ РАБОТАЕМ?</a>
+                                    <a href="#stage">КАК МЫ РАБОТАЕМ?</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#!">ОРГАНИЗАЦИЯ СНАБЖЕНИЯ</a>
+                                    <a href="#about">ОРГАНИЗАЦИЯ СНАБЖЕНИЯ</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#!">КОНТАКТЫ</a>
+                                    <a href="#contacts">КОНТАКТЫ</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="menu-btn">
+                    <div class="menu-btn" id="menu-btn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
             </header>
-            <main class="main">           
-                <div class="first__screen">
+            <main class="main">
+                <div class="first__screen" id="home">
                     <div class="container">
                         <div class="first__screen-info">
                             <h1>мы Организуем ПРАВИЛЬНЫЙ ЗАКУП</h1>
@@ -159,7 +161,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="usp">
+                <div class="usp" id="usp">
                     <div class="container">
                         <div class="title">
                             <h2>почему мы?</h2>
@@ -371,12 +373,11 @@
                                     </p>
                                 </li>
                             </ul>
-                            <div class="slider-next"></div>
-                            <div class="slider-prev"></div>
+                            <div class="slider-pagination"></div>
                         </div>
                     </div>
                 </div>
-                <div class="offer">
+                <div class="offer" id="offer">
                     <div class="title">
                         <h2>НАШИ УСЛУГИ</h2>
                         <span class="line"></span>
@@ -426,6 +427,7 @@
                         </div>
                         <div class="slider-next"></div>
                         <div class="slider-prev"></div>
+                        <div class="slider-pagination mobile"></div>
                     </div>
                 </div>
                 <div class="service">
@@ -503,7 +505,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="stage">
+                <div class="stage" id="stage">
                     <div class="container">
                         <div class="title">
                             <h2>этапы работы</h2>
@@ -704,7 +706,7 @@
                         <div class="slider-pagination"></div>
                     </div>
                 </div>
-                <div class="about">
+                <div class="about" id="about">
                     <div class="container">
                         <div class="about__image">
                             <img src="./img/about/1.jpg" alt="фото" />
@@ -1083,7 +1085,7 @@
                 </div>
             </main>
             <footer class="footer">
-                <div class="footer__contact">
+                <div class="footer__contact" id="contacts">
                     <div class="footer__contact-wrap">
                         <div class="footer__contact-feedback">
                             <div class="footer__contact-item">
