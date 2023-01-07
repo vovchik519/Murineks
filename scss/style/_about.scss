@@ -24,12 +24,13 @@
     margin-top: 57px;
     .title {
         align-items: flex-start;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
     p {
         font-size: 19px;
         line-height: 28px;
         color: #444444;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 1024px) {
@@ -99,12 +100,13 @@
         margin-top: 7.5vw;
         .title {
             align-items: flex-start;
-            margin-bottom: 3vw;
+            margin-bottom: 10vw;
         }
         p {
             font-size: 4vw;
             line-height: 5vw;
             color: #444444;
+            margin-bottom: 3vw;
         }
     }
 }

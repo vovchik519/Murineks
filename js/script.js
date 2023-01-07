@@ -1,38 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-    const onScrollHeader = () => {
-
-        const header = document.querySelector('.header')
-
-        let prevScroll = window.pageYOffset
-        let currentScroll
-
-        window.addEventListener('scroll', () => {
-
-            currentScroll = window.pageYOffset
-
-            const headerHidden = () => header.classList.contains('header_hidden')
-
-            if (currentScroll > prevScroll && !headerHidden()) {
-                header.classList.add('header_hidden')
-            }
-            if (currentScroll < prevScroll && headerHidden()) {
-                header.classList.remove('header_hidden')
-            }
-
-            prevScroll = currentScroll
-
-        })
-
-    }
-
-    onScrollHeader()
-
-});
 var swiper = new Swiper(".offer__wrapper", {
     slidesPerView: 3,
     loop: true,
     loopFillGroupWithBlank: true,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".slider-next",
         prevEl: ".slider-prev",
@@ -49,10 +19,12 @@ var swiper = new Swiper(".offer__wrapper", {
         },
         769: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 10,
+
         },
         1025: {
-            slidesPerView: 3
+            slidesPerView: 3,
+            spaceBetween: 10,
         }
     }
 });
@@ -88,7 +60,7 @@ var swiper = new Swiper(".purchases__wrapper", {
     slidesPerView: 2,
     loop: true,
     loopFillGroupWithBlank: true,
-    spaceBetween: 45,
+    spaceBetween: 50,
     navigation: {
         nextEl: ".slider-next",
         prevEl: ".slider-prev",

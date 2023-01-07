@@ -7,13 +7,13 @@
             rgba(50, 42, 35, (0.701926 * 0.6)) 41.94%,
             rgba(50, 42, 35, 0) 75.85%
         ),
-        url(./../img/service/bg.jpg) center no-repeat;
-    background-size: auto 100%;
+        url(./../img/service/bg.jpg) right no-repeat;
+    background-size: cover;
     width: 100%;
-    min-height: 768px;
+    min-height: 100vh;
     color: #ffffff;
     margin-bottom: 100px;
-    padding: 136px 0;
+    padding: 17.5vh 0;
     .title {
         align-items: flex-start;
         margin-bottom: 62px;
@@ -28,7 +28,7 @@
 .service__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px -3%;
+    margin: -20px -1.5%;
     width: 600px;
 }
 .service__item {
@@ -46,6 +46,7 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 22px;
+        margin-bottom: 11px;
     }
     p {
         font-size: 15px;
@@ -63,7 +64,7 @@
                 rgba(50, 42, 35, 0.207) 75.85%
             ),
             url(./../img/service/bg-mobile.jpg) center no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
         min-height: 0;
         margin-bottom: 13vw;
         padding: 17.7vw 0;

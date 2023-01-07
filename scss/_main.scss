@@ -78,15 +78,13 @@ h6 {
 body {
     font-family: "Rubik";
     color: #151515;
-    font-display: swap;
 }
 .wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 1366px;
-    margin: 0 auto;
     height: 100%;
+    overflow-x: hidden;
 }
 .header {
     flex: 0 0 auto;
@@ -98,8 +96,9 @@ body {
     flex: 0 0 auto;
 }
 .container {
-    width: 89%;
+    max-width: 1295px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 .button {
     display: flex;
@@ -199,6 +198,9 @@ body {
     display: none;
 }
 @media (max-width: 768px) {
+    .container{
+        padding: 0 5vw;
+    }
     .button {
         font-size: 4vw;
         width: 60vw;

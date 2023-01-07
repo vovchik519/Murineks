@@ -10,8 +10,9 @@
 }
 .offer__wrapper {
     position: relative;
-    padding: 40px;
-    margin: 0 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1300px;
 }
 .offer__item {
     height: auto;
@@ -53,7 +54,7 @@
     }
 }
 @media (max-width: 768px) {
-    .offer{
+    .offer {
         margin-bottom: 13vw;
     }
     .offer__wrapper {

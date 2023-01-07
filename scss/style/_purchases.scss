@@ -1,12 +1,13 @@
 .purchases {
     margin-bottom: 110px;
     .title {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 }
 .purchases__wrapper {
     position: relative;
-    padding: 10px 40px;
+    padding: 10px 45px;
+    max-width: 1300px;
     .slider-next,
     .slider-prev {
         top: 75px;
@@ -52,7 +53,7 @@
         .title {
             margin-bottom: 5.208vw;
         }
-        .slider-pagination{
+        .slider-pagination {
             margin-top: 7vw;
         }
     }

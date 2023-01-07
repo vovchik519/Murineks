@@ -91,16 +91,14 @@ h6 {
 body {
   font-family: "Rubik";
   color: #151515;
-  font-display: swap;
 }
 
 .wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 1366px;
-  margin: 0 auto;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -116,8 +114,9 @@ body {
 }
 
 .container {
-  width: 89%;
+  max-width: 1295px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .button {
@@ -228,6 +227,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 5vw;
+  }
   .button {
     font-size: 4vw;
     width: 60vw;
@@ -283,10 +285,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header_hidden {
-  transform: translateY(-100%);
 }
 
 .logo {
@@ -600,12 +598,12 @@ body {
 }
 .first__screen {
   position: relative;
-  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/header/bg.jpg) right no-repeat;
-  background-size: auto 100%;
-  width: 100%;
-  min-height: 650px;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/header/bg.jpg) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: calc(100vh - 116px);
   color: #ffffff;
-  margin-bottom: 100px;
+  margin: 116px 0 100px;
 }
 .first__screen .button {
   background: white;
@@ -623,7 +621,7 @@ body {
 }
 
 .first__screen-info {
-  padding: 182px 0 160px 0;
+  padding: 28vh 0 25vh 0;
   width: 588px;
 }
 .first__screen-info h1 {
@@ -640,12 +638,13 @@ body {
 }
 
 .social {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 500;
 }
 .social li {
   width: 40px;
@@ -657,10 +656,10 @@ body {
   .first__screen {
     position: relative;
     background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../img/header/bg-mobile.jpg) top no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 13vw;
+    margin: 0 0 13vw 0;
   }
   .first__screen-info {
     padding: 52vh 0 15vh;
@@ -715,26 +714,21 @@ body {
 
 .usp__item {
   margin: 28px 15px;
-  width: 276px;
-}
-.usp__item p {
-  font-size: 17px;
-  line-height: 20px;
-  color: #444444;
+  width: 281px;
 }
 
 .usp__title {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 .usp__title img {
   width: 70px;
   height: 70px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .usp__title h3 {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -767,11 +761,6 @@ body {
   .usp__slider .usp__item {
     margin: 0;
   }
-  .usp__slider .usp__item p {
-    font-size: 4vw;
-    line-height: 4.5vw;
-    color: #444444;
-  }
   .usp__slider .usp__title {
     margin-bottom: 4vw;
   }
@@ -802,8 +791,9 @@ body {
 
 .offer__wrapper {
   position: relative;
-  padding: 40px;
-  margin: 0 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .offer__item {
@@ -866,13 +856,13 @@ body {
 }
 .service {
   position: relative;
-  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/service/bg.jpg) center no-repeat;
-  background-size: auto 100%;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/service/bg.jpg) right no-repeat;
+  background-size: cover;
   width: 100%;
-  min-height: 768px;
+  min-height: 100vh;
   color: #ffffff;
   margin-bottom: 100px;
-  padding: 136px 0;
+  padding: 17.5vh 0;
 }
 .service .title {
   align-items: flex-start;
@@ -888,7 +878,7 @@ body {
 .service__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: -20px -3%;
+  margin: -20px -1.5%;
   width: 600px;
 }
 
@@ -907,6 +897,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 22px;
+  margin-bottom: 11px;
 }
 .service__item-info p {
   font-size: 15px;
@@ -917,7 +908,7 @@ body {
 @media (max-width: 768px) {
   .service {
     background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.54) -1.96%, rgba(50, 42, 35, 0.5069562) 30.42%, rgba(50, 42, 35, 0.4211556) 41.94%, rgba(50, 42, 35, 0.207) 75.85%), url(./../img/service/bg-mobile.jpg) center no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     min-height: 0;
     margin-bottom: 13vw;
     padding: 17.7vw 0;
@@ -1041,6 +1032,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   transition: 0.2s;
+  margin-bottom: 15px;
 }
 .stage__info p {
   font-weight: 400;
@@ -1137,7 +1129,8 @@ body {
 .news__wrapper {
   position: relative;
   padding: 20px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .news__item {
@@ -1162,7 +1155,8 @@ body {
   color: #666666;
 }
 .news__item .news__time {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+  font-size: 17px;
   color: #949494;
 }
 
@@ -1238,12 +1232,13 @@ body {
 }
 .about__info .title {
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .about__info p {
   font-size: 19px;
   line-height: 28px;
   color: #444444;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -1314,12 +1309,13 @@ body {
   }
   .about__info .title {
     align-items: flex-start;
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
   }
   .about__info p {
     font-size: 4vw;
     line-height: 5vw;
     color: #444444;
+    margin-bottom: 3vw;
   }
 }
 .review {
@@ -1364,10 +1360,10 @@ body {
   top: 50%;
   left: 0;
   background: url(./../svg/review/arrow.svg) no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 10px;
+  width: 10px;
   transform: rotate(-90deg) translateX(50%);
-  background-size: 30px 30px;
+  background-size: 10px 10px;
 }
 
 .review__item[open] summary::before {
@@ -1409,6 +1405,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: 500;
+  width: 100%;
   font-size: 17px;
   line-height: 17px;
   color: #b61d1d !important;
@@ -1556,12 +1553,13 @@ body {
   margin-bottom: 110px;
 }
 .purchases .title {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .purchases__wrapper {
   position: relative;
-  padding: 10px 40px;
+  padding: 10px 45px;
+  max-width: 1300px;
 }
 .purchases__wrapper .slider-next,
 .purchases__wrapper .slider-prev {
@@ -1737,7 +1735,7 @@ body {
 }
 .footer__feedback input,
 .footer__feedback textarea {
-  padding: 12px 24px;
+  padding: 12px 22px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;

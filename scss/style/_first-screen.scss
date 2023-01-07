@@ -7,12 +7,12 @@
             rgba(50, 42, 35, (0.701926 * 0.7)) 41.94%,
             rgba(50, 42, 35, 0) 75.85%
         ),
-        url(./../img/header/bg.jpg) right no-repeat;
-    background-size: auto 100%;
-    width: 100%;
-    min-height: 650px;
+        url(./../img/header/bg.jpg) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: calc(100vh - 116px);
     color: #ffffff;
-    margin-bottom: 100px;
+    margin: 116px 0 100px;
     .button {
         background: white;
         color: #b61d1d;
@@ -29,7 +29,7 @@
     }
 }
 .first__screen-info {
-    padding: 182px 0 160px 0;
+    padding: 28vh 0 25vh 0;
     width: 588px;
     h1 {
         font-weight: 600;
@@ -45,12 +45,13 @@
     }
 }
 .social {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 500;
     li {
         width: 40px;
         height: 40px;
@@ -65,10 +66,10 @@
             #36363699,
             ),
             url(./../img/header/bg-mobile.jpg) top no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
         width: 100%;
         min-height: 100vh;
-        margin-bottom: 13vw;
+        margin: 0 0 13vw 0;
     }
     .first__screen-info {
         padding: 52vh 0 15vh;

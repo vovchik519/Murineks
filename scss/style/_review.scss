@@ -38,10 +38,10 @@
     top: 50%;
     left: 0;
     background: url(./../svg/review/arrow.svg) no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 10px;
+    width: 10px;
     transform: rotate(-90deg) translateX(50%);
-    background-size: 30px 30px;
+    background-size: 10px 10px;
 }
 
 .review__item[open] summary::before {
@@ -79,6 +79,7 @@
     display: flex;
     align-items: center;
     font-weight: 500;
+    width: 100%;
     font-size: 17px;
     line-height: 17px;
     color: #b61d1d !important;
