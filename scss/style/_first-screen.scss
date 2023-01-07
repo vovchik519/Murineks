@@ -7,7 +7,7 @@
             rgba(50, 42, 35, (0.701926 * 0.7)) 41.94%,
             rgba(50, 42, 35, 0) 75.85%
         ),
-        url(../../img/header/bg.jpg) right no-repeat;
+        url(./../img/header/bg.jpg) right no-repeat;
     background-size: auto 100%;
     width: 100%;
     min-height: 650px;
@@ -60,7 +60,11 @@
 @media (max-width: 768px) {
     .first__screen {
         position: relative;
-        background: url(../../img/header/bg-mobile.jpg) top no-repeat;
+        background: linear-gradient(
+            #36363699,
+            #36363699,
+            ),
+            url(./../img/header/bg-mobile.jpg) top no-repeat;
         background-size: 100% auto;
         width: 100%;
         min-height: 100vh;

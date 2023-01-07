@@ -535,7 +535,7 @@ body {
 }
 .first__screen {
   position: relative;
-  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(../../img/header/bg.jpg) right no-repeat;
+  background: linear-gradient(93.59deg, rgba(50, 42, 35, 0.63) -1.96%, rgba(50, 42, 35, 0.5914489) 30.42%, rgba(50, 42, 35, 0.4913482) 41.94%, rgba(50, 42, 35, 0) 75.85%), url(./../img/header/bg.jpg) right no-repeat;
   background-size: auto 100%;
   width: 100%;
   min-height: 650px;
@@ -591,7 +591,7 @@ body {
 @media (max-width: 768px) {
   .first__screen {
     position: relative;
-    background: url(../../img/header/bg-mobile.jpg) top no-repeat;
+    background: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(./../img/header/bg-mobile.jpg) top no-repeat;
     background-size: 100% auto;
     width: 100%;
     min-height: 100vh;
