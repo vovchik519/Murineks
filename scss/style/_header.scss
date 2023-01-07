@@ -1,10 +1,20 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
     padding: 21px 0;
+    z-index: 500;
+    background-color: white;
+    width: 100%;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+}
+.header_hidden {
+    transform: translateY(-100%);
 }
 .logo {
     display: flex;
@@ -82,7 +92,6 @@
 .menu-btn {
     display: none;
 }
-
 @media (max-width: 1366px) {
     .header {
         padding: (21px * 0.8) 0;
@@ -176,6 +185,9 @@
     }
 }
 @media (max-width: 768px) {
+    body.active {
+        overflow: hidden;
+    }
     .header {
         padding: 2.6vw 0;
     }
@@ -217,7 +229,7 @@
             margin-bottom: 6.5vw;
         }
     }
-    .menu{
+    .menu {
         width: 100%;
     }
     .menu__list {

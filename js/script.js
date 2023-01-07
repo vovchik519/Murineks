@@ -1,3 +1,34 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    const onScrollHeader = () => {
+
+        const header = document.querySelector('.header')
+
+        let prevScroll = window.pageYOffset
+        let currentScroll
+
+        window.addEventListener('scroll', () => {
+
+            currentScroll = window.pageYOffset
+
+            const headerHidden = () => header.classList.contains('header_hidden')
+
+            if (currentScroll > prevScroll && !headerHidden()) {
+                header.classList.add('header_hidden')
+            }
+            if (currentScroll < prevScroll && headerHidden()) {
+                header.classList.remove('header_hidden')
+            }
+
+            prevScroll = currentScroll
+
+        })
+
+    }
+
+    onScrollHeader()
+
+});
 var swiper = new Swiper(".offer__wrapper", {
     slidesPerView: 3,
     loop: true,
@@ -81,9 +112,11 @@ var swiper = new Swiper(".usp__slider", {
     }
 });
 
+let bodyOverflow = document.querySelector('body');
 let menuBtn = document.querySelector('.menu-btn');
 let headerWrap = document.querySelector('.header__wrap');
 menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active');
     headerWrap.classList.toggle('active');
+    bodyOverflow.classList.toggle('active');
 })
