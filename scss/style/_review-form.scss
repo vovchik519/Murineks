@@ -40,3 +40,54 @@
         width: 325px;
     }
 }
+@media (max-width: 1024px) {
+    .review__form-input input {
+        width: 30vw;
+    }
+    .review__form-container {
+        p {
+            margin-left: 2vw;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .review__form {
+        margin-bottom: 15vw;
+    }
+    .review__form-container {
+        flex-direction: column;
+        p {
+            font-size: 4vw;
+            line-height: 5vw;
+            margin-left: 0;
+            margin-top: 2vw;
+        }
+    }
+    .review__form-wrapper {
+        legend {
+            font-size: 8vw;
+            line-height: 8.5vw;
+            margin-bottom: 4vw;
+        }
+    }
+    .review__form-wrap {
+        textarea,
+        input {
+            padding: 2.5vw 3vw 2.8vw;
+            font-size: 4vw;
+            line-height: 5vw;
+        }
+        textarea {
+            min-height: 22vw;
+            margin-bottom: 2.6vw;
+        }
+    }
+    .review__form-input {
+        flex-direction: column;
+        margin: 0 0 2.6vw 0;
+        input {
+            margin: 2.6vw 0 0 0;
+            width: 100%;
+        }
+    }
+}

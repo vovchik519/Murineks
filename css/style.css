@@ -210,6 +210,7 @@ body {
   .button svg {
     margin-left: 1.5vw;
     width: 4vw;
+    height: 4vw;
   }
   .slider-prev,
 .slider-next {
@@ -223,6 +224,9 @@ body {
   .line {
     width: 8vw;
     height: 0.8vw;
+  }
+  .slider-pagination {
+    height: 5vw;
   }
 }
 .header {
@@ -1181,6 +1185,44 @@ body {
   color: #444444;
 }
 
+@media (max-width: 1024px) {
+  .about {
+    margin-bottom: 13vw;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__image {
+    display: flex;
+    margin-right: 0;
+  }
+  .about__image img {
+    max-height: 75.5vw;
+  }
+  .about__image img:first-child {
+    width: 50vw;
+    max-width: none;
+  }
+  .about__image img:last-child {
+    width: 40vw;
+    max-width: none;
+    margin-top: 21.5vw;
+  }
+  .about__info {
+    margin-top: 7.5vw;
+  }
+  .about__info .title {
+    align-items: flex-start;
+    margin-bottom: 3vw;
+  }
+  .about__info p {
+    font-size: 2.1vw;
+    line-height: 2.4vw;
+    color: #444444;
+  }
+}
 @media (max-width: 768px) {
   .about {
     margin-bottom: 13vw;
@@ -1399,6 +1441,51 @@ body {
   width: 325px;
 }
 
+@media (max-width: 1024px) {
+  .review__form-input input {
+    width: 30vw;
+  }
+  .review__form-container p {
+    margin-left: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .review__form {
+    margin-bottom: 15vw;
+  }
+  .review__form-container {
+    flex-direction: column;
+  }
+  .review__form-container p {
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-left: 0;
+    margin-top: 2vw;
+  }
+  .review__form-wrapper legend {
+    font-size: 8vw;
+    line-height: 8.5vw;
+    margin-bottom: 4vw;
+  }
+  .review__form-wrap textarea,
+.review__form-wrap input {
+    padding: 2.5vw 3vw 2.8vw;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  .review__form-wrap textarea {
+    min-height: 22vw;
+    margin-bottom: 2.6vw;
+  }
+  .review__form-input {
+    flex-direction: column;
+    margin: 0 0 2.6vw 0;
+  }
+  .review__form-input input {
+    margin: 2.6vw 0 0 0;
+    width: 100%;
+  }
+}
 .purchases {
   margin-bottom: 110px;
 }
@@ -1450,9 +1537,54 @@ body {
   margin-right: 10.5px;
 }
 .purchases__link a:last-child {
-  border-left: 1px solid #9F9F9F;
+  border-left: 1px solid #9f9f9f;
 }
 
+@media (max-width: 768px) {
+  .purchases {
+    margin-bottom: 14.323vw;
+  }
+  .purchases .title {
+    margin-bottom: 5.208vw;
+  }
+  .purchases .slider-pagination {
+    margin-top: 7vw;
+  }
+  .purchases__wrapper {
+    padding: 1.302vw 5.208vw;
+  }
+  .purchases__wrapper .slider-next,
+.purchases__wrapper .slider-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .purchases__item {
+    padding: 4.297vw;
+  }
+  .purchases__item h3 {
+    font-size: 5vw;
+    line-height: 6vw;
+    margin-bottom: 3vw;
+  }
+  .purchases__time {
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-bottom: 2vw;
+  }
+  .purchases__link {
+    margin: 0 -2.604vw;
+  }
+  .purchases__link a {
+    padding: 0 2.604vw;
+    font-size: 4vw;
+    width: 50%;
+  }
+  .purchases__link a img {
+    width: 3.906vw;
+    height: 3.906vw;
+    margin-right: 1.367vw;
+  }
+}
 .footer {
   display: flex;
 }
@@ -1582,4 +1714,163 @@ body {
 
 .footer__feedback-email {
   width: 295px;
+}
+
+@media (max-width: 1270px) {
+  .footer__feedback {
+    background-position: right;
+    background-size: auto 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer__feedback {
+    padding: 6vw 3vw;
+    background-size: auto 100%;
+  }
+  .footer__feedback .title {
+    margin-bottom: 2.5782vw;
+  }
+  .footer__feedback p {
+    font-size: 2.7vw;
+    line-height: 3vw;
+    margin-top: 1.2vw;
+  }
+  .footer__feedback input,
+.footer__feedback textarea {
+    padding: 1.5vw 1.8vw 1.68vw;
+    font-size: 2.4vw;
+    line-height: 3vw;
+    width: 100%;
+  }
+  .footer__feedback input::-moz-placeholder {
+    font-size: 1.8vw;
+    line-height: 2.4vw;
+  }
+  .footer__feedback input:-ms-input-placeholder {
+    font-size: 1.8vw;
+    line-height: 2.4vw;
+  }
+  .footer__feedback input::placeholder {
+    font-size: 1.8vw;
+    line-height: 2.4vw;
+  }
+  .footer__feedback textarea {
+    width: 100%;
+    height: 12vw;
+    margin-bottom: 3.1248vw;
+  }
+  .footer__feedback-input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.8vw 0;
+  }
+  .footer__feedback-name,
+.footer__feedback-email {
+    width: 100%;
+    margin: 1.2vw 0;
+  }
+  .footer__contact {
+    padding: 6vw 3vw;
+    width: 100%;
+  }
+  .footer__contact address span,
+.footer__contact p {
+    font-size: 1.8vw;
+    line-height: 2.4vw;
+    margin-bottom: 2.4vw;
+  }
+  .footer__contact a,
+.footer__contact address {
+    font-size: 2.4vw;
+    line-height: 3vw;
+  }
+  .footer__contact address {
+    padding-bottom: 6vw;
+  }
+  .footer__contact address p {
+    margin-bottom: 3vw;
+  }
+  .footer__author {
+    font-size: 2.4vw !important;
+    line-height: 3vw !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer__feedback {
+    padding: 10vw 5vw;
+    background-size: auto 100%;
+  }
+  .footer__feedback .title {
+    margin-bottom: 4.297vw;
+  }
+  .footer__feedback p {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    margin-top: 2vw;
+  }
+  .footer__feedback input,
+.footer__feedback textarea {
+    padding: 2.5vw 3vw 2.8vw;
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 100%;
+  }
+  .footer__feedback input::-moz-placeholder {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .footer__feedback input:-ms-input-placeholder {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .footer__feedback input::placeholder {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .footer__feedback textarea {
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 5.208vw;
+  }
+  .footer__feedback-input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3vw 0;
+  }
+  .footer__feedback-name,
+.footer__feedback-email {
+    width: 100%;
+    margin: 2vw 0;
+  }
+  .footer__contact {
+    padding: 10vw 5vw;
+    width: 100%;
+  }
+  .footer__contact address span,
+.footer__contact p {
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-bottom: 4vw;
+  }
+  .footer__contact a,
+.footer__contact address {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  .footer__contact address {
+    padding-bottom: 10vw;
+  }
+  .footer__contact address p {
+    margin-bottom: 5vw;
+  }
+  .footer__author {
+    font-size: 4vw !important;
+    line-height: 5vw !important;
+  }
 }

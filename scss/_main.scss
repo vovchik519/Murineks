@@ -186,6 +186,7 @@ body {
         svg {
             margin-left: 1.5vw;
             width: 4vw;
+            height: 4vw;
         }
     }
     .slider-prev,
@@ -202,5 +203,8 @@ body {
     .line {
         width: 8vw;
         height: 0.8vw;
+    }
+    .slider-pagination {
+        height: 5vw;
     }
 }

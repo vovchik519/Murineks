@@ -8,14 +8,14 @@ var swiper = new Swiper(".offer__wrapper", {
         prevEl: ".slider-prev",
     },
     breakpoints: {
-        320: {
+        1: {
             slidesPerView: 1
         },
-        768: {
+        769: {
             slidesPerView: 2
 
         },
-        1024: {
+        1025: {
             slidesPerView: 3
         }
     }
@@ -35,13 +35,13 @@ var swiper = new Swiper(".news__wrapper", {
         type: 'bullets',
     },
     breakpoints: {
-        320: {
+        1: {
             slidesPerView: 1
         },
-        768: {
+        769: {
             slidesPerView: 2
         },
-        1024: {
+        1025: {
             slidesPerView: 3
         }
     }
@@ -61,10 +61,10 @@ var swiper = new Swiper(".purchases__wrapper", {
         type: 'bullets',
     },
     breakpoints: {
-        320: {
+        1: {
             slidesPerView: 1
         },
-        768: {
+        769: {
             slidesPerView: 2
         }
     }
