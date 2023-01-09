@@ -1,5 +1,8 @@
 .first__screen {
     position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
     background: linear-gradient(
             93.59deg,
             rgba(50, 42, 35, (0.9 * 0.7)) -1.96%,
@@ -12,7 +15,8 @@
     width: 100vw;
     min-height: calc(100vh - 116px);
     color: #ffffff;
-    margin: 116px 0 100px;
+    margin: 0 0 100px 0;
+    padding: 70px 0;
     .button {
         background: white;
         color: #b61d1d;
@@ -27,9 +31,11 @@
             fill: white;
         }
     }
+    .container {
+        width: 100%;
+    }
 }
 .first__screen-info {
-    padding: 28vh 0 25vh 0;
     width: 588px;
     h1 {
         font-weight: 600;
@@ -48,7 +54,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    right: 20px;
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 500;
@@ -58,21 +64,28 @@
         margin: 5px 0;
     }
 }
+@media (max-width: 1366px) {
+    .first__screen {
+        min-height: calc(100vh - 92.78px);
+    }
+}
+@media (max-width: 1024px) {
+    .first__screen {
+        min-height: calc(100vh - 69.58px);
+    }
+}
 @media (max-width: 768px) {
     .first__screen {
         position: relative;
-        background: linear-gradient(
-            #36363699,
-            #36363699,
-            ),
+        background: linear-gradient(#36363699, #36363699),
             url(./../img/header/bg-mobile.jpg) top no-repeat;
         background-size: cover;
+        min-height: calc(100vh - 8.08vw);
         width: 100%;
-        min-height: 100vh;
         margin: 0 0 13vw 0;
+        padding: 10vw 0;
     }
     .first__screen-info {
-        padding: 52vh 0 15vh;
         width: 100%;
         h1 {
             font-size: 8.5vw;

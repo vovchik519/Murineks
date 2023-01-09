@@ -1,5 +1,7 @@
 .service {
     position: relative;
+    display: flex;
+    align-items: center;
     background: linear-gradient(
             93.59deg,
             rgba(50, 42, 35, (0.9 * 0.6)) -1.96%,
@@ -13,7 +15,7 @@
     min-height: 100vh;
     color: #ffffff;
     margin-bottom: 100px;
-    padding: 17.5vh 0;
+    padding: 50px 0;
     .title {
         align-items: flex-start;
         margin-bottom: 62px;
@@ -23,6 +25,9 @@
     }
     .button {
         margin-top: 50px;
+    }
+    .container{
+        width: 100%;
     }
 }
 .service__wrapper {
@@ -67,7 +72,7 @@
         background-size: cover;
         min-height: 0;
         margin-bottom: 13vw;
-        padding: 17.7vw 0;
+        padding: 10vw 0;
         .title {
             width: 70vw;
             margin-bottom: 8vw;
